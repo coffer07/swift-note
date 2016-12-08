@@ -14,6 +14,7 @@
 		464E6A771DF86F9C0019352C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464E6A751DF86F9C0019352C /* LaunchScreen.storyboard */; };
 		464E6A821DF86F9C0019352C /* XNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E6A811DF86F9C0019352C /* XNoteTests.swift */; };
 		464E6A8D1DF86F9C0019352C /* XNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464E6A8C1DF86F9C0019352C /* XNoteUITests.swift */; };
+		DE051E9FC692243A9CE9671C /* Pods_XNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D646787D48CC7DAF9EAFF4 /* Pods_XNote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		464E6A881DF86F9C0019352C /* XNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464E6A8C1DF86F9C0019352C /* XNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNoteUITests.swift; sourceTree = "<group>"; };
 		464E6A8E1DF86F9C0019352C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D646787D48CC7DAF9EAFF4 /* Pods_XNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCD3F6555C1DC4398C22536 /* Pods-XNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XNote/Pods-XNote.debug.xcconfig"; sourceTree = "<group>"; };
+		C4066A5E4A1840D2D829F28D /* Pods-XNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNote/Pods-XNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE051E9FC692243A9CE9671C /* Pods_XNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0773D22C24F9D3A34411ED28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76D646787D48CC7DAF9EAFF4 /* Pods_XNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		464E6A601DF86F9C0019352C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				464E6A801DF86F9C0019352C /* XNoteTests */,
 				464E6A8B1DF86F9C0019352C /* XNoteUITests */,
 				464E6A6A1DF86F9C0019352C /* Products */,
+				9D5B90334510F4BA5E87394D /* Pods */,
+				0773D22C24F9D3A34411ED28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = XNoteUITests;
 			sourceTree = "<group>";
 		};
+		9D5B90334510F4BA5E87394D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD3F6555C1DC4398C22536 /* Pods-XNote.debug.xcconfig */,
+				C4066A5E4A1840D2D829F28D /* Pods-XNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 464E6A911DF86F9C0019352C /* Build configuration list for PBXNativeTarget "XNote" */;
 			buildPhases = (
+				47E36DEB1839F28861A247B9 /* [CP] Check Pods Manifest.lock */,
 				464E6A651DF86F9C0019352C /* Sources */,
 				464E6A661DF86F9C0019352C /* Frameworks */,
 				464E6A671DF86F9C0019352C /* Resources */,
+				9935A8F4E18C1496CB3EB926 /* [CP] Embed Pods Frameworks */,
+				44BCB2873627948ABD714285 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44BCB2873627948ABD714285 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNote/Pods-XNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47E36DEB1839F28861A247B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9935A8F4E18C1496CB3EB926 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XNote/Pods-XNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		464E6A651DF86F9C0019352C /* Sources */ = {
@@ -408,9 +483,11 @@
 		};
 		464E6A921DF86F9C0019352C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCD3F6555C1DC4398C22536 /* Pods-XNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxiang.XNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +497,11 @@
 		};
 		464E6A931DF86F9C0019352C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4066A5E4A1840D2D829F28D /* Pods-XNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaoxiang.XNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +582,7 @@
 				464E6A931DF86F9C0019352C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		464E6A941DF86F9C0019352C /* Build configuration list for PBXNativeTarget "XNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +591,7 @@
 				464E6A961DF86F9C0019352C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		464E6A971DF86F9C0019352C /* Build configuration list for PBXNativeTarget "XNoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +600,7 @@
 				464E6A991DF86F9C0019352C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
