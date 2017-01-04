@@ -12,6 +12,8 @@
 		4610964A1DF9AA4900132C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461096481DF9AA4900132C4E /* LaunchScreen.storyboard */; };
 		46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */; };
 		46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19001E1D3E1D00B12611 /* NetWork.swift */; };
+		46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19021E1D50D600B12611 /* NetWorkUrl.swift */; };
+		46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */; };
 		6D26C5A525A1E067FC5E09FB /* Pods_XNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		461096521DF9AB2800132C4E /* app_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_Bridging_Header.h; sourceTree = "<group>"; };
 		46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviromentConfig.swift; sourceTree = "<group>"; };
 		46FC19001E1D3E1D00B12611 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		46FC19021E1D50D600B12611 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkUrl.swift; sourceTree = "<group>"; };
+		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED144C711B030FD9CD9B60FF /* Pods-XNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNote/Pods-XNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +66,7 @@
 		4610963E1DF9AA4900132C4E /* XNote */ = {
 			isa = PBXGroup;
 			children = (
+				46FC19041E1D522A00B12611 /* 工具 */,
 				46FC18FF1E1D3CE200B12611 /* 网络库 */,
 				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
 				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
@@ -77,8 +82,25 @@
 			isa = PBXGroup;
 			children = (
 				46FC19001E1D3E1D00B12611 /* NetWork.swift */,
+				46FC19021E1D50D600B12611 /* NetWorkUrl.swift */,
 			);
 			name = "网络库";
+			sourceTree = "<group>";
+		};
+		46FC19041E1D522A00B12611 /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				46FC19051E1D529D00B12611 /* 扩展库 */,
+			);
+			name = "工具";
+			sourceTree = "<group>";
+		};
+		46FC19051E1D529D00B12611 /* 扩展库 */ = {
+			isa = PBXGroup;
+			children = (
+				46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */,
+			);
+			name = "扩展库";
 			sourceTree = "<group>";
 		};
 		C7BB274C3D4AE79642186E09 /* Pods */ = {
@@ -220,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */,
 				46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */,
 				461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */,
+				46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */,
 				46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

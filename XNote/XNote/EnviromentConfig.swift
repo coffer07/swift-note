@@ -10,6 +10,10 @@ import Foundation
 
 #if RELEASE
 
+    let serverHost:ServerHost = ServerHost.Offical;
+    
 #else
+
+    let serverHost:ServerHost = ServerHost.Develop;
 
 #endif
