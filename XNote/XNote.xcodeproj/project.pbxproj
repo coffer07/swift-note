@@ -14,6 +14,14 @@
 		46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19001E1D3E1D00B12611 /* NetWork.swift */; };
 		46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19021E1D50D600B12611 /* NetWorkUrl.swift */; };
 		46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */; };
+		46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC190D1E25393E00B12611 /* BaseViewController.swift */; };
+		46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */; };
+		46FC19141E253EA500B12611 /* BlmUCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19131E253EA500B12611 /* BlmUCC.swift */; };
+		46FC19161E253EAC00B12611 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 46FC19151E253EAC00B12611 /* bridge.js */; };
+		46FC19181E25416300B12611 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19171E25416300B12611 /* ScreenUtil.swift */; };
+		46FC191A1E267F9A00B12611 /* BlmOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19191E267F9A00B12611 /* BlmOpen.swift */; };
+		46FC191C1E267FD700B12611 /* BlmVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC191B1E267FD700B12611 /* BlmVersion.swift */; };
+		46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC191D1E26802500B12611 /* AppVerUtil.swift */; };
 		6D26C5A525A1E067FC5E09FB /* Pods_XNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +34,17 @@
 		4610964B1DF9AA4900132C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461096521DF9AB2800132C4E /* app_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_Bridging_Header.h; sourceTree = "<group>"; };
 		46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviromentConfig.swift; sourceTree = "<group>"; };
-		46FC19001E1D3E1D00B12611 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
-		46FC19021E1D50D600B12611 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkUrl.swift; sourceTree = "<group>"; };
-		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
+		46FC19001E1D3E1D00B12611 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWork.swift; path = ../NetWork.swift; sourceTree = "<group>"; };
+		46FC19021E1D50D600B12611 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkUrl.swift; path = ../NetWorkUrl.swift; sourceTree = "<group>"; };
+		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+HexColor.swift"; path = "../UIColor+HexColor.swift"; sourceTree = "<group>"; };
+		46FC190D1E25393E00B12611 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWkWVCtrl.swift; sourceTree = "<group>"; };
+		46FC19131E253EA500B12611 /* BlmUCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmUCC.swift; sourceTree = "<group>"; };
+		46FC19151E253EAC00B12611 /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
+		46FC19171E25416300B12611 /* ScreenUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
+		46FC19191E267F9A00B12611 /* BlmOpen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmOpen.swift; sourceTree = "<group>"; };
+		46FC191B1E267FD700B12611 /* BlmVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmVersion.swift; sourceTree = "<group>"; };
+		46FC191D1E26802500B12611 /* AppVerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVerUtil.swift; sourceTree = "<group>"; };
 		9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED144C711B030FD9CD9B60FF /* Pods-XNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNote/Pods-XNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +82,9 @@
 		4610963E1DF9AA4900132C4E /* XNote */ = {
 			isa = PBXGroup;
 			children = (
-				46FC19041E1D522A00B12611 /* 工具 */,
-				46FC18FF1E1D3CE200B12611 /* 网络库 */,
+				46FC190F1E253ACB00B12611 /* 工具 */,
+				46FC190C1E25391500B12611 /* 框架 */,
+				46FC190B1E2538B700B12611 /* 网络库 */,
 				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
 				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
 				461096461DF9AA4900132C4E /* Assets.xcassets */,
@@ -78,29 +95,44 @@
 			path = XNote;
 			sourceTree = "<group>";
 		};
-		46FC18FF1E1D3CE200B12611 /* 网络库 */ = {
+		46FC190B1E2538B700B12611 /* 网络库 */ = {
 			isa = PBXGroup;
 			children = (
 				46FC19001E1D3E1D00B12611 /* NetWork.swift */,
 				46FC19021E1D50D600B12611 /* NetWorkUrl.swift */,
 			);
-			name = "网络库";
+			path = "网络库";
 			sourceTree = "<group>";
 		};
-		46FC19041E1D522A00B12611 /* 工具 */ = {
+		46FC190C1E25391500B12611 /* 框架 */ = {
 			isa = PBXGroup;
 			children = (
-				46FC19051E1D529D00B12611 /* 扩展库 */,
+				46FC191D1E26802500B12611 /* AppVerUtil.swift */,
+				46FC19171E25416300B12611 /* ScreenUtil.swift */,
+				46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */,
+				46FC190D1E25393E00B12611 /* BaseViewController.swift */,
 			);
-			name = "工具";
+			path = "框架";
 			sourceTree = "<group>";
 		};
-		46FC19051E1D529D00B12611 /* 扩展库 */ = {
+		46FC190F1E253ACB00B12611 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				46FC19121E253E8400B12611 /* JS交互 */,
 				46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */,
 			);
-			name = "扩展库";
+			path = "工具";
+			sourceTree = "<group>";
+		};
+		46FC19121E253E8400B12611 /* JS交互 */ = {
+			isa = PBXGroup;
+			children = (
+				46FC19151E253EAC00B12611 /* bridge.js */,
+				46FC19191E267F9A00B12611 /* BlmOpen.swift */,
+				46FC191B1E267FD700B12611 /* BlmVersion.swift */,
+				46FC19131E253EA500B12611 /* BlmUCC.swift */,
+			);
+			name = "JS交互";
 			sourceTree = "<group>";
 		};
 		C7BB274C3D4AE79642186E09 /* Pods */ = {
@@ -150,7 +182,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "高翔";
 				TargetAttributes = {
 					4610963B1DF9AA4900132C4E = {
@@ -184,6 +216,7 @@
 			files = (
 				4610964A1DF9AA4900132C4E /* LaunchScreen.storyboard in Resources */,
 				461096471DF9AA4900132C4E /* Assets.xcassets in Resources */,
+				46FC19161E253EAC00B12611 /* bridge.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,11 +275,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC19181E25416300B12611 /* ScreenUtil.swift in Sources */,
 				46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */,
 				46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */,
+				46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */,
 				461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */,
 				46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */,
 				46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */,
+				46FC19141E253EA500B12611 /* BlmUCC.swift in Sources */,
+				46FC191A1E267F9A00B12611 /* BlmOpen.swift in Sources */,
+				46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */,
+				46FC191C1E267FD700B12611 /* BlmVersion.swift in Sources */,
+				46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +322,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -304,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -331,6 +372,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -347,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -359,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A4033D465A2719796D425BC /* Pods-XNote.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -374,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED144C711B030FD9CD9B60FF /* Pods-XNote.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

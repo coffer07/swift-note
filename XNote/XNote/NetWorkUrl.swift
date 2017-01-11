@@ -14,7 +14,6 @@ enum ServerHost : String {
     var webDevelop:String{
         switch self {
         case .Offical:
-            //             return "http://stg.web.boluomeet.com"
             return "http://web.boluomeet.com"
             
         default:
@@ -89,7 +88,6 @@ enum BLMURL : String {
     case GetCouponCount = "/user/get_coupon_num"
     case getCouponWeb = "/coupon"
     case CouponWebUrl = "/coupon/selection"
-    
     
     // MARK: - 身份信息
     case SaveIdentity = "/user/info/identity/"

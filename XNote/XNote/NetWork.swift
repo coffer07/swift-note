@@ -50,7 +50,7 @@ class Network:NSObject,NetworkRequest{
             print("param:\(param),url:\(urlString),header:\(header)")
         #endif
 
-        let request = Alamofire.request(urlString, method: .post, parameters: param, encoding: URLEncoding.queryString, headers: header).responseString { (response) in
+        let request = Alamofire.request(urlString, method: .post, parameters: param, encoding: JSONEncoding.default, headers: header).responseString { (response) in
             self.handleResult(response: response, completion: completion)
         }
         requestList.append(request)
