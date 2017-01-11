@@ -8,12 +8,22 @@
 
 import Foundation
 
-#if RELEASE
+#if DEBUG
 
-    let serverHost:ServerHost = ServerHost.Offical;
+    let serverHost:ServerHost = ServerHost.Develop;
     
 #else
 
-    let serverHost:ServerHost = ServerHost.Develop;
+    let serverHost:ServerHost = ServerHost.Offical;
 
 #endif
+
+
+public func debugLog(_ item: Any) {
+    #if DEBUG
+        print(item)
+    #else
+        
+    #endif
+}
+

@@ -33,14 +33,9 @@ class BlmOpen: NSObject, WKScriptMessageHandler {
         if let argArr = message.body as? Array<String> {
             
             if argArr.count < 1 {
-                
                 return
-                
             }
             self.openCb?(argArr[0])
-            
         }
-        
     }
-    
 }

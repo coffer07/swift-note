@@ -20,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //加载bridge js文件
         BlmUCC.loadScript()
         
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        window?.rootViewController = CWkWVCtrl(url: "www.baidu.com")
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -21,12 +21,36 @@ class BaseViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        debugLog("viewDidLoad: " + self.getNameDescription())
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        debugLog("viewWillAppear: " + self.getNameDescription())
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        debugLog("viewDidAppear: " + self.getNameDescription())
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        debugLog("viewWillDisappear: " + self.getNameDescription())
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        debugLog("viewDidDisappear: " + self.getNameDescription())
+    }
+    
+    deinit {
+        debugLog("deinit: " + self.getNameDescription())
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        debugLog("didReceiveMemoryWarning: " + self.getNameDescription())
+        
     }
     
 }

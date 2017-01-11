@@ -22,6 +22,7 @@
 		46FC191A1E267F9A00B12611 /* BlmOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19191E267F9A00B12611 /* BlmOpen.swift */; };
 		46FC191C1E267FD700B12611 /* BlmVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC191B1E267FD700B12611 /* BlmVersion.swift */; };
 		46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC191D1E26802500B12611 /* AppVerUtil.swift */; };
+		46FC19211E26954200B12611 /* NSObject+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19201E26954200B12611 /* NSObject+Add.swift */; };
 		6D26C5A525A1E067FC5E09FB /* Pods_XNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		46FC19191E267F9A00B12611 /* BlmOpen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmOpen.swift; sourceTree = "<group>"; };
 		46FC191B1E267FD700B12611 /* BlmVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmVersion.swift; sourceTree = "<group>"; };
 		46FC191D1E26802500B12611 /* AppVerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVerUtil.swift; sourceTree = "<group>"; };
+		46FC19201E26954200B12611 /* NSObject+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Add.swift"; sourceTree = "<group>"; };
 		9B54EF7797B6BD69D942FCFD /* Pods_XNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED144C711B030FD9CD9B60FF /* Pods-XNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNote/Pods-XNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 		46FC190F1E253ACB00B12611 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				46FC191F1E26949300B12611 /* 扩展 */,
 				46FC19121E253E8400B12611 /* JS交互 */,
 				46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */,
 			);
@@ -128,11 +131,19 @@
 			isa = PBXGroup;
 			children = (
 				46FC19151E253EAC00B12611 /* bridge.js */,
+				46FC19131E253EA500B12611 /* BlmUCC.swift */,
 				46FC19191E267F9A00B12611 /* BlmOpen.swift */,
 				46FC191B1E267FD700B12611 /* BlmVersion.swift */,
-				46FC19131E253EA500B12611 /* BlmUCC.swift */,
 			);
 			name = "JS交互";
+			sourceTree = "<group>";
+		};
+		46FC191F1E26949300B12611 /* 扩展 */ = {
+			isa = PBXGroup;
+			children = (
+				46FC19201E26954200B12611 /* NSObject+Add.swift */,
+			);
+			name = "扩展";
 			sourceTree = "<group>";
 		};
 		C7BB274C3D4AE79642186E09 /* Pods */ = {
@@ -275,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FC19211E26954200B12611 /* NSObject+Add.swift in Sources */,
 				46FC19181E25416300B12611 /* ScreenUtil.swift in Sources */,
 				46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */,
 				46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */,

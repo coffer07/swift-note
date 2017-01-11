@@ -17,8 +17,6 @@ struct CWkWVCtrlDefaults {
 }
 class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDelegate,WKUIDelegate{
     
-    static var chargeWV: CWkWVCtrl?
-    
     var ucc: BlmUCC = BlmUCC()
     
     private var config: WKWebViewConfiguration = WKWebViewConfiguration()
@@ -26,17 +24,6 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
     internal var webView: WKWebView?
     
     var openUrl: String?
-//
-//    private var closeToUrl: String?
-//    var loadIndicator = WebLoadIndicator()
-//    
-//    var rldVW = ReloadView()
-//    
-//    var shareObject:ShareObject?
-    
-    private var isShowLogin = false
-    
-    var phoneList = ""
     
     required init?(coder aDecoder: NSCoder) {
         
@@ -98,11 +85,9 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
+    func reload() {
+        loadRequest()
     }
-
     
     func loadRequest() {
         
@@ -123,25 +108,7 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
         
     }
     
-    func getNewWV() {
-        
-        if let wv = self.webView {
-            
-            wv.removeFromSuperview()
-            self.webView = WKWebView(frame: CGRect(x: 0, y: ScreenUtil.navTotalHeight, width: ScreenUtil.width, height: ScreenUtil.validHeight), configuration: self.config)
-            
-        }
-        
-        if let wv = self.webView {
-            wv.navigationDelegate = self
-//            view.insertSubview(wv, belowSubview: rldVW)
-            
-        }
-        
-    }
-    
     // MARK: - 实现WKNavigationDelegate
-    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         
         let app = UIApplication.shared
@@ -185,17 +152,12 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         if title == CWkWVCtrlDefaults.defaultTitle {
-            
             title = webView.title
-            
         }
-        
 //        let loadStateDel = loadIndicator as LoadStateDelegate
 //        loadStateDel.success()
 //
-        self.config.websiteDataStore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes(), completionHandler: {records in
-            for record in records{
-            }
+        self.config.websiteDataStore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes(), completionHandler: {(records) in
             
         })
  
@@ -210,11 +172,12 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
     }
     
     // MARK: - JS互操作方法
-    
     func initHdl(){
+        
         self.ucc.openHdl = BlmOpen(opCb: {[weak self](url) in
             self?.openNewWindow(url: url)
         })
+        
         self.ucc.getVersionHdl = BlmVersion(getVersionCb: {[weak self](cbName,version) in
             self?.getVersion(cbName: cbName, version: version)
         })
@@ -232,7 +195,6 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
         
     }
     
-    
     func getVersion(cbName: String, version: String){
         
         let js = "_tools.runCallback(\"\(cbName)\", \"\(version)\");"
@@ -240,9 +202,9 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
         self.webView?.evaluateJavaScript(js, completionHandler: nil)
     }
     
-    func reload() {
-        
-        loadRequest()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
         
     }
+
 }
