@@ -15,27 +15,21 @@ class BlmOpen: NSObject, WKScriptMessageHandler {
     var openCb: ((_ url: String) -> Void)?
     
     init(opCb: @escaping (_ url: String) -> Void) {
-        
         super.init()
-        
         self.openCb = opCb
-        
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        
         if message.name != BLMUCCHandleName.Open.rawValue {
-            
             return
-            
         }
         
         if let argArr = message.body as? Array<String> {
-            
             if argArr.count < 1 {
                 return
             }
             self.openCb?(argArr[0])
         }
     }
+    
 }

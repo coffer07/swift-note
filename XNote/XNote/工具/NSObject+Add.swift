@@ -10,10 +10,10 @@ import Foundation
 
 extension NSObject {
     
+    // MARK: - 打印类名字描述
     public func getNameDescription() -> String {
         let startIndex = self.description.range(of: ".")
         let endIndex = self.description.range(of: ":")
-
         if startIndex == nil || endIndex == nil || startIndex!.lowerBound > endIndex!.lowerBound{
             return self.description
         }

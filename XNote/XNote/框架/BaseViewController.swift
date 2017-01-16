@@ -18,7 +18,6 @@ class BaseViewController: UIViewController{
         super.init(nibName: nil, bundle: nil)
         
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         debugLog("viewDidLoad: " + self.getNameDescription())

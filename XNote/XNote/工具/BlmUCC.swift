@@ -18,34 +18,23 @@ class BlmUCC: WKUserContentController {
     private static var script: WKUserScript?
     
     var openHdl: WKScriptMessageHandler? {
-        
         didSet {
-            
             self.removeScriptMessageHandler(forName: BLMUCCHandleName.Open.rawValue)
             self.add(openHdl!, name: BLMUCCHandleName.Open.rawValue)
-            
         }
-        
     }
     
     var getVersionHdl: WKScriptMessageHandler?{
-        
         didSet{
-            
             self.removeScriptMessageHandler(forName: BLMUCCHandleName.GetVersion.rawValue)
-            
             self.add(getVersionHdl!, name: BLMUCCHandleName.GetVersion.rawValue)
         }
     }
     
     override init() {
-        
         super.init()
-        
         if let sc = BlmUCC.script {
-            
             self.addUserScript(sc)
-            
         }
     }
     
@@ -53,24 +42,18 @@ class BlmUCC: WKUserContentController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - 加载JS
     class func loadScript() {
-        
         let jsFilePath = Bundle.main.path(forResource: "bridge", ofType: "js")
-        
         if let path = jsFilePath {
-            
             do {
                 let scriptContent = try String(contentsOfFile: path)
-                
                 BlmUCC.script = WKUserScript(source: scriptContent, injectionTime: .atDocumentStart, forMainFrameOnly: true)
-                
             }
             catch _ as NSError {
                 
             }
-            
         }
-        
     }
     
 }

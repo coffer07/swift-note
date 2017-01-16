@@ -29,24 +29,16 @@ class AppVer:NSObject{
     }
     
     var FullVersion: String {
-        
         get {
-            
             return "\(appVer)(\(appBuild))"
-            
         }
-        
     }
     
     var lastVersion: String? {
-        
         get {
-            
 //            return UserDefaults.standardUserDefaults.objectForKey(AppVerUtil.versionKey) as? String
-         
             return ""
         }
-        
     }
     
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
@@ -56,6 +48,7 @@ class AppVer:NSObject{
     private override init() {
         
     }
+    
 }
 
 
@@ -77,7 +70,6 @@ class AppVerUtil:NSObject {
             }
             return false
         }
-        
     }
     
 //    class func checkIfNeedUpdate()->Bool{

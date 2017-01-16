@@ -19,9 +19,12 @@ import Foundation
 #endif
 
 
-public func debugLog(_ item: Any) {
+// MARK: - DEBUG 下打印
+public func debugLog(_ item: Any?) {
     #if DEBUG
-        print(item)
+        if item != nil {
+            print(item!)
+        }
     #else
         
     #endif
