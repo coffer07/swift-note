@@ -27,7 +27,6 @@ extension UIView {
         layer.path = maskPath.cgPath
         self.layer.mask = layer
         self.layer.masksToBounds = true
-        
     }
     
 }

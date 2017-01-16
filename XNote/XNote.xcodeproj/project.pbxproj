@@ -93,12 +93,12 @@
 				46FC190F1E253ACB00B12611 /* 工具 */,
 				46FC190C1E25391500B12611 /* 框架 */,
 				46FC190B1E2538B700B12611 /* 网络库 */,
-				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
-				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
-				461096461DF9AA4900132C4E /* Assets.xcassets */,
-				461096481DF9AA4900132C4E /* LaunchScreen.storyboard */,
 				4610964B1DF9AA4900132C4E /* Info.plist */,
+				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
 				46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */,
+				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
+				461096481DF9AA4900132C4E /* LaunchScreen.storyboard */,
+				461096461DF9AA4900132C4E /* Assets.xcassets */,
 			);
 			path = XNote;
 			sourceTree = "<group>";
@@ -108,13 +108,6 @@
 			children = (
 			);
 			name = "缓存";
-			sourceTree = "<group>";
-		};
-		46CFA5191E2D1769005073F4 /* 通知 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "通知";
 			sourceTree = "<group>";
 		};
 		46FC190B1E2538B700B12611 /* 网络库 */ = {
@@ -140,7 +133,6 @@
 		46FC190F1E253ACB00B12611 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
-				46CFA5191E2D1769005073F4 /* 通知 */,
 				46CFA5181E2D1759005073F4 /* 缓存 */,
 				46FC191F1E26949300B12611 /* 扩展 */,
 				46FC19121E253E8400B12611 /* JS交互 */,
