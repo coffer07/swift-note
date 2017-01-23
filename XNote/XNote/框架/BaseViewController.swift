@@ -46,6 +46,7 @@ class BaseViewController: UIViewController{
     deinit {
         debugLog("deinit: " + self.getNameDescription())
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         debugLog("didReceiveMemoryWarning: " + self.getNameDescription())

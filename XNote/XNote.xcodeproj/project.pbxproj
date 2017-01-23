@@ -45,7 +45,7 @@
 		46FC19021E1D50D600B12611 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkUrl.swift; path = ../NetWorkUrl.swift; sourceTree = "<group>"; };
 		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+HexColor.swift"; path = "../UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		46FC190D1E25393E00B12611 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWkWVCtrl.swift; sourceTree = "<group>"; };
+		46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CWkWVCtrl.swift; path = "../框架/CWkWVCtrl.swift"; sourceTree = "<group>"; };
 		46FC19131E253EA500B12611 /* BlmUCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmUCC.swift; sourceTree = "<group>"; };
 		46FC19151E253EAC00B12611 /* bridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
 		46FC19171E25416300B12611 /* ScreenUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
@@ -124,7 +124,6 @@
 			children = (
 				46FC191D1E26802500B12611 /* AppVerUtil.swift */,
 				46FC19171E25416300B12611 /* ScreenUtil.swift */,
-				46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */,
 				46FC190D1E25393E00B12611 /* BaseViewController.swift */,
 			);
 			path = "框架";
@@ -147,6 +146,7 @@
 				46FC19131E253EA500B12611 /* BlmUCC.swift */,
 				46FC19191E267F9A00B12611 /* BlmOpen.swift */,
 				46FC191B1E267FD700B12611 /* BlmVersion.swift */,
+				46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */,
 			);
 			name = "JS交互";
 			sourceTree = "<group>";
