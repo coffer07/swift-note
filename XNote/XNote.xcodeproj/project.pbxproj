@@ -10,12 +10,12 @@
 		461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4610963F1DF9AA4900132C4E /* AppDelegate.swift */; };
 		461096471DF9AA4900132C4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461096461DF9AA4900132C4E /* Assets.xcassets */; };
 		4610964A1DF9AA4900132C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461096481DF9AA4900132C4E /* LaunchScreen.storyboard */; };
+		46C017B51E36F13A00C250B0 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017B41E36F13A00C250B0 /* NetWork.swift */; };
+		46C017B71E36F14200C250B0 /* NetWorkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017B61E36F14200C250B0 /* NetWorkUrl.swift */; };
 		46CFA5131E2D0D2B005073F4 /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */; };
 		46CFA5151E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */; };
 		46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5161E2D1144005073F4 /* String+Add.swift */; };
 		46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */; };
-		46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19001E1D3E1D00B12611 /* NetWork.swift */; };
-		46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19021E1D50D600B12611 /* NetWorkUrl.swift */; };
 		46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */; };
 		46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC190D1E25393E00B12611 /* BaseViewController.swift */; };
 		46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */; };
@@ -37,12 +37,12 @@
 		461096491DF9AA4900132C4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4610964B1DF9AA4900132C4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461096521DF9AB2800132C4E /* app_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_Bridging_Header.h; sourceTree = "<group>"; };
+		46C017B41E36F13A00C250B0 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		46C017B61E36F14200C250B0 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkUrl.swift; sourceTree = "<group>"; };
 		46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
 		46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Add.swift"; sourceTree = "<group>"; };
 		46CFA5161E2D1144005073F4 /* String+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Add.swift"; sourceTree = "<group>"; };
 		46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviromentConfig.swift; sourceTree = "<group>"; };
-		46FC19001E1D3E1D00B12611 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWork.swift; path = ../NetWork.swift; sourceTree = "<group>"; };
-		46FC19021E1D50D600B12611 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetWorkUrl.swift; path = ../NetWorkUrl.swift; sourceTree = "<group>"; };
 		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+HexColor.swift"; path = "../UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		46FC190D1E25393E00B12611 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CWkWVCtrl.swift; path = "../框架/CWkWVCtrl.swift"; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 			children = (
 				46FC190F1E253ACB00B12611 /* 工具 */,
 				46FC190C1E25391500B12611 /* 框架 */,
-				46FC190B1E2538B700B12611 /* 网络库 */,
 				4610964B1DF9AA4900132C4E /* Info.plist */,
+				46C017B31E36F13000C250B0 /* 网络库 */,
 				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
 				46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */,
 				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
@@ -103,20 +103,20 @@
 			path = XNote;
 			sourceTree = "<group>";
 		};
+		46C017B31E36F13000C250B0 /* 网络库 */ = {
+			isa = PBXGroup;
+			children = (
+				46C017B61E36F14200C250B0 /* NetWorkUrl.swift */,
+				46C017B41E36F13A00C250B0 /* NetWork.swift */,
+			);
+			path = "网络库";
+			sourceTree = "<group>";
+		};
 		46CFA5181E2D1759005073F4 /* 缓存 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "缓存";
-			sourceTree = "<group>";
-		};
-		46FC190B1E2538B700B12611 /* 网络库 */ = {
-			isa = PBXGroup;
-			children = (
-				46FC19001E1D3E1D00B12611 /* NetWork.swift */,
-				46FC19021E1D50D600B12611 /* NetWorkUrl.swift */,
-			);
-			path = "网络库";
 			sourceTree = "<group>";
 		};
 		46FC190C1E25391500B12611 /* 框架 */ = {
@@ -306,19 +306,19 @@
 				46FC19211E26954200B12611 /* NSObject+Add.swift in Sources */,
 				46FC19181E25416300B12611 /* ScreenUtil.swift in Sources */,
 				46CFA5151E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift in Sources */,
-				46FC19031E1D50D600B12611 /* NetWorkUrl.swift in Sources */,
 				46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */,
 				46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */,
 				46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */,
 				461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */,
 				46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */,
-				46FC19011E1D3E1D00B12611 /* NetWork.swift in Sources */,
+				46C017B71E36F14200C250B0 /* NetWorkUrl.swift in Sources */,
 				46FC19141E253EA500B12611 /* BlmUCC.swift in Sources */,
 				46FC191A1E267F9A00B12611 /* BlmOpen.swift in Sources */,
 				46CFA5131E2D0D2B005073F4 /* UIView+Add.swift in Sources */,
 				46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */,
 				46FC191C1E267FD700B12611 /* BlmVersion.swift in Sources */,
 				46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */,
+				46C017B51E36F13A00C250B0 /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
