@@ -13,6 +13,6 @@ extension String {
     
     // MARK: - string 转 json
     func jsonObject() -> JSON {
-        return JSON.parse(self)
+        return JSON(parseJSON: self)
     }
 }

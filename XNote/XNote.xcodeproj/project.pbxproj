@@ -92,8 +92,8 @@
 			children = (
 				46FC190F1E253ACB00B12611 /* 工具 */,
 				46FC190C1E25391500B12611 /* 框架 */,
-				4610964B1DF9AA4900132C4E /* Info.plist */,
 				46C017B31E36F13000C250B0 /* 网络库 */,
+				4610964B1DF9AA4900132C4E /* Info.plist */,
 				461096521DF9AB2800132C4E /* app_Bridging_Header.h */,
 				46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */,
 				4610963F1DF9AA4900132C4E /* AppDelegate.swift */,
