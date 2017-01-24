@@ -18,6 +18,9 @@
 		46C017D81E3704B100C250B0 /* BlmUCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017D71E3704B100C250B0 /* BlmUCC.swift */; };
 		46C017DA1E3704B700C250B0 /* BlmVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017D91E3704B700C250B0 /* BlmVersion.swift */; };
 		46C017DC1E37051D00C250B0 /* CWkWVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017DB1E37051D00C250B0 /* CWkWVCtrl.swift */; };
+		46C017E31E37093C00C250B0 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C017E21E37093C00C250B0 /* Mediator.m */; };
+		46C017E61E37287300C250B0 /* Mediator+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C017E51E37287300C250B0 /* Mediator+Actions.m */; };
+		46C017E81E37455700C250B0 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017E71E37455700C250B0 /* Mediator.swift */; };
 		46CFA5131E2D0D2B005073F4 /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */; };
 		46CFA5151E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */; };
 		46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5161E2D1144005073F4 /* String+Add.swift */; };
@@ -45,6 +48,11 @@
 		46C017D71E3704B100C250B0 /* BlmUCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmUCC.swift; sourceTree = "<group>"; };
 		46C017D91E3704B700C250B0 /* BlmVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmVersion.swift; sourceTree = "<group>"; };
 		46C017DB1E37051D00C250B0 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWkWVCtrl.swift; sourceTree = "<group>"; };
+		46C017E11E37093C00C250B0 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		46C017E21E37093C00C250B0 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		46C017E41E37287300C250B0 /* Mediator+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mediator+Actions.h"; sourceTree = "<group>"; };
+		46C017E51E37287300C250B0 /* Mediator+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Mediator+Actions.m"; sourceTree = "<group>"; };
+		46C017E71E37455700C250B0 /* Mediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
 		46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Add.swift"; sourceTree = "<group>"; };
 		46CFA5161E2D1144005073F4 /* String+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Add.swift"; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 			children = (
 				46FC190F1E253ACB00B12611 /* 工具 */,
 				46FC190C1E25391500B12611 /* 框架 */,
+				46C017DD1E37070100C250B0 /* 中间层 */,
 				46C017B31E36F13000C250B0 /* 网络库 */,
 				46C017D21E37048B00C250B0 /* WebViewControll */,
 				4610964B1DF9AA4900132C4E /* Info.plist */,
@@ -123,6 +132,18 @@
 				46C017D71E3704B100C250B0 /* BlmUCC.swift */,
 			);
 			path = WebViewControll;
+			sourceTree = "<group>";
+		};
+		46C017DD1E37070100C250B0 /* 中间层 */ = {
+			isa = PBXGroup;
+			children = (
+				46C017E11E37093C00C250B0 /* Mediator.h */,
+				46C017E21E37093C00C250B0 /* Mediator.m */,
+				46C017E41E37287300C250B0 /* Mediator+Actions.h */,
+				46C017E51E37287300C250B0 /* Mediator+Actions.m */,
+				46C017E71E37455700C250B0 /* Mediator.swift */,
+			);
+			path = "中间层";
 			sourceTree = "<group>";
 		};
 		46FC190C1E25391500B12611 /* 框架 */ = {
@@ -299,8 +320,11 @@
 				46C017DC1E37051D00C250B0 /* CWkWVCtrl.swift in Sources */,
 				46FC19181E25416300B12611 /* ScreenUtil.swift in Sources */,
 				46CFA5151E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift in Sources */,
+				46C017E61E37287300C250B0 /* Mediator+Actions.m in Sources */,
+				46C017E81E37455700C250B0 /* Mediator.swift in Sources */,
 				46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */,
 				46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */,
+				46C017E31E37093C00C250B0 /* Mediator.m in Sources */,
 				46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */,
 				461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */,
 				46C017B71E36F14200C250B0 /* NetWorkUrl.swift in Sources */,

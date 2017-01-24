@@ -22,6 +22,12 @@ class AppVer:NSObject{
         }
     }
     
+    var appName: String{
+        get{
+            return Bundle.main.infoDictionary?["CFBundleName"] as! String
+        }
+    }
+    
     var appBuild:String{
         get{
             return Bundle.main.infoDictionary?[kCFBundleVersionKey as String] as! String
