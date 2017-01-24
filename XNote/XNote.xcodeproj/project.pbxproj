@@ -12,11 +12,11 @@
 		4610964A1DF9AA4900132C4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461096481DF9AA4900132C4E /* LaunchScreen.storyboard */; };
 		46C017B51E36F13A00C250B0 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017B41E36F13A00C250B0 /* NetWork.swift */; };
 		46C017B71E36F14200C250B0 /* NetWorkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017B61E36F14200C250B0 /* NetWorkUrl.swift */; };
+		46C017D11E3703CD00C250B0 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C017D01E3703CD00C250B0 /* UIColor+HexColor.swift */; };
 		46CFA5131E2D0D2B005073F4 /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */; };
 		46CFA5151E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */; };
 		46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CFA5161E2D1144005073F4 /* String+Add.swift */; };
 		46FC18FE1E1D3C6600B12611 /* EnviromentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */; };
-		46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */; };
 		46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC190D1E25393E00B12611 /* BaseViewController.swift */; };
 		46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */; };
 		46FC19141E253EA500B12611 /* BlmUCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC19131E253EA500B12611 /* BlmUCC.swift */; };
@@ -39,11 +39,11 @@
 		461096521DF9AB2800132C4E /* app_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_Bridging_Header.h; sourceTree = "<group>"; };
 		46C017B41E36F13A00C250B0 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
 		46C017B61E36F14200C250B0 /* NetWorkUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkUrl.swift; sourceTree = "<group>"; };
+		46C017D01E3703CD00C250B0 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
 		46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Add.swift"; sourceTree = "<group>"; };
 		46CFA5161E2D1144005073F4 /* String+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Add.swift"; sourceTree = "<group>"; };
 		46FC18FD1E1D3C6600B12611 /* EnviromentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnviromentConfig.swift; sourceTree = "<group>"; };
-		46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+HexColor.swift"; path = "../UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		46FC190D1E25393E00B12611 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		46FC19101E253E2E00B12611 /* CWkWVCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CWkWVCtrl.swift; path = "../框架/CWkWVCtrl.swift"; sourceTree = "<group>"; };
 		46FC19131E253EA500B12611 /* BlmUCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlmUCC.swift; sourceTree = "<group>"; };
@@ -112,13 +112,6 @@
 			path = "网络库";
 			sourceTree = "<group>";
 		};
-		46CFA5181E2D1759005073F4 /* 缓存 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "缓存";
-			sourceTree = "<group>";
-		};
 		46FC190C1E25391500B12611 /* 框架 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +125,6 @@
 		46FC190F1E253ACB00B12611 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
-				46CFA5181E2D1759005073F4 /* 缓存 */,
 				46FC191F1E26949300B12611 /* 扩展 */,
 				46FC19121E253E8400B12611 /* JS交互 */,
 			);
@@ -155,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				46FC19201E26954200B12611 /* NSObject+Add.swift */,
+				46C017D01E3703CD00C250B0 /* UIColor+HexColor.swift */,
 				46CFA5161E2D1144005073F4 /* String+Add.swift */,
 				46CFA5121E2D0D2B005073F4 /* UIView+Add.swift */,
-				46FC19061E1D532D00B12611 /* UIColor+HexColor.swift */,
 				46CFA5141E2D0FC2005073F4 /* CLLocationCoordinate2D+Add.swift */,
 			);
 			name = "扩展";
@@ -310,13 +302,13 @@
 				46FC191E1E26802500B12611 /* AppVerUtil.swift in Sources */,
 				46CFA5171E2D1144005073F4 /* String+Add.swift in Sources */,
 				461096401DF9AA4900132C4E /* AppDelegate.swift in Sources */,
-				46FC19071E1D532D00B12611 /* UIColor+HexColor.swift in Sources */,
 				46C017B71E36F14200C250B0 /* NetWorkUrl.swift in Sources */,
 				46FC19141E253EA500B12611 /* BlmUCC.swift in Sources */,
 				46FC191A1E267F9A00B12611 /* BlmOpen.swift in Sources */,
 				46CFA5131E2D0D2B005073F4 /* UIView+Add.swift in Sources */,
 				46FC19111E253E2E00B12611 /* CWkWVCtrl.swift in Sources */,
 				46FC191C1E267FD700B12611 /* BlmVersion.swift in Sources */,
+				46C017D11E3703CD00C250B0 /* UIColor+HexColor.swift in Sources */,
 				46FC190E1E25393E00B12611 /* BaseViewController.swift in Sources */,
 				46C017B51E36F13A00C250B0 /* NetWork.swift in Sources */,
 			);
