@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         //加载bridge js文件
-//        Mediator.sharedInstance().loadScript()
+        Mediator.sharedInstance.loadScript()
         
         
         window = UIWindow(frame: UIScreen.main.bounds)

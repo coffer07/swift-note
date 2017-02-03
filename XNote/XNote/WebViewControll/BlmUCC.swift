@@ -56,8 +56,4 @@ class BlmUCC: WKUserContentController {
         }
     }
     
-    func scriptfunc() {
-        
-    }
-    
 }
