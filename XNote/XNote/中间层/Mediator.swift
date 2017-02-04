@@ -22,7 +22,7 @@ class Mediator: NSObject {
         super.init()
     }
     
-    func performTarger(targetName: String,actionName: String,params: [String: AnyObject]?,shouldCacheTarget: Bool,isClassMethod: Bool) -> (MediatorErrorCode , AnyObject?) {
+    func performTarger(targetName: String,actionName: String,params: [String: Any]?,shouldCacheTarget: Bool,isClassMethod: Bool) -> (MediatorErrorCode , AnyObject?) {
 
         var targetClass = self.cachedTarget[targetName]
         if targetClass == nil {
@@ -46,6 +46,7 @@ class Mediator: NSObject {
                     return (.Success , targetClass!.perform(action) as AnyObject?)
                 }
             }
+         
         }
         else {
             let targetObject = targetClass!.init()

@@ -27,30 +27,32 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
         super.init(coder: aDecoder)
         
     }
-    
-    init(url: String, pgTitle: String? = nil) {
-        
+
+    init(params: [String: Any]) {
         super.init()
-        openUrl = url
-        self.config.userContentController = self.ucc
-        
-        self.config.websiteDataStore = WKWebsiteDataStore.default()
-        self.config.websiteDataStore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes(), completionHandler: {_ in 
-        })
-     
-        initHdl()
+        if let url = params["url"] as? String{
+            openUrl = url
+            self.config.userContentController = self.ucc
             
-        self.webView = WKWebView(frame: CGRect.zero, configuration: self.config)
-        
-        self.webView?.navigationDelegate = self
-        
-        title = CWkWVCtrlDefaults.defaultTitle
-        
-        //如果有特别指定的标题，则使用指定的标题
-        if pgTitle != nil && !pgTitle!.isEmpty {
+            self.config.websiteDataStore = WKWebsiteDataStore.default()
+            self.config.websiteDataStore.fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes(), completionHandler: {_ in
+            })
             
-            title = pgTitle
+            initHdl()
             
+            self.webView = WKWebView(frame: CGRect.zero, configuration: self.config)
+            
+            self.webView?.navigationDelegate = self
+            
+            title = CWkWVCtrlDefaults.defaultTitle
+            
+            //如果有特别指定的标题，则使用指定的标题
+            if let pgTitle = params["title"] as? String{
+                if pgTitle.isEmpty == false {
+                    title = pgTitle
+                }
+                
+            }
         }
     }
     
@@ -183,7 +185,7 @@ class CWkWVCtrl: BaseViewController, WKNavigationDelegate,UIGestureRecognizerDel
     
     func openNewWindow(url: String) {
         
-        let newCtrl = CWkWVCtrl(url: url)
+        let newCtrl = CWkWVCtrl(params: ["url": url])
         
         if let nav = self.navigationController {
             nav.pushViewController(newCtrl, animated: true)

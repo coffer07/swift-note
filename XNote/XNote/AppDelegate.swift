@@ -6,6 +6,8 @@
 //  Copyright © 2016年 高翔. All rights reserved.
 //
 
+typealias _VIMP = @convention(c)(_ id:AnyObject,_ sel:UnsafeMutablePointer<Selector>,[String: Any])->AnyObject
+
 import UIKit
 
 @UIApplicationMain
@@ -19,15 +21,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //加载bridge js文件
         Mediator.sharedInstance.loadScript()
-        
-        
+//        debugLog(NSStringFromSelector( #selector(CWkWVCtrl.init(params:))) + "/")
+        allMethods()
         window = UIWindow(frame: UIScreen.main.bounds)
-
-        window?.rootViewController = CWkWVCtrl(url: "www.baidu.com")
         
-        window?.makeKeyAndVisible()
+        if let webVC = Mediator.sharedInstance.webViewControllInit(params: ["url": "www.baidu.com"]) {
+            window?.rootViewController = webVC
+            window?.makeKeyAndVisible()
+        }
         
         return true
+    }
+    
+    func allMethods() {
+       
+        if  CWkWVCtrl.instancesRespond(to:  #selector(CWkWVCtrl.init(params:))) {
+            
+            let imp = UIViewController.instanceMethod(for: #selector(CWkWVCtrl.init(params:)))
+
+            let paramsVIMP: _VIMP = unsafeBitCast(imp, to: _VIMP.self)
+            let selectorPtr = UnsafeMutablePointer<Selector>.allocate(capacity: 1)
+            selectorPtr.initialize(to: #selector(CWkWVCtrl.init(params:)))
+            
+            let a = paramsVIMP(CWkWVCtrl.self,selectorPtr,["url":"www.baidu.com"])
+        }
+        
+//        var count: UInt32 = 0
+//        let methods = class_copyMethodList(CWkWVCtrl.self, &count)
+//        var i = 0
+//        let action = NSSelectorFromString("openNewWindowWithUrl")
+//        while  i < Int(count) {
+//            let method = methods?[i]
+//            let sel = method_getName(method)
+//            if action == sel {
+//                if CWkWVCtrl.self.responds(to: sel) {
+//                    print("success")
+//                    
+//                }
+//            }
+//            let methodName = sel_getName(sel)
+//            let argument = method_getNumberOfArguments(method)
+//            i = i + 1
+//            print("name: \(String.init(cString: methodName!)), arguemtns: \(argument)")
+//        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
